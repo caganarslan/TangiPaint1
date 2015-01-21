@@ -27,14 +27,16 @@ LIBS_PATH = "$$OPENCV_PATH/install/x64/mingw/bin" #project compiled using Visual
     LIBS     += -L$$LIBS_PATH \
                 -lopencv_core249 \
                 -lopencv_highgui249 \
-				-lopencv_imgproc249
+				-lopencv_imgproc249 \
+				-lopencv_calib3d249
     }
 
     CONFIG(release, debug|release) {
     LIBS     += -L$$LIBS_PATH \
                 -lopencv_core249 \
                 -lopencv_highgui249 \
-				-lopencv_imgproc249
+				-lopencv_imgproc249 \
+				-lopencv_calib3d249
 	}
 
 }

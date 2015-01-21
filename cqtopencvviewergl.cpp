@@ -18,10 +18,12 @@ void CQtOpenCVViewerGl::initializeGL()
 {
     makeCurrent();
     qglClearColor(mBgColor.darker());
+
 }
 
 void CQtOpenCVViewerGl::resizeGL(int width, int height)
 {
+
     makeCurrent();
     glViewport(0, 0, (GLint)width, (GLint)height);
 
